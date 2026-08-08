@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=2560, height=1440" />
+  <title>Key Remapper</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="app">
+    <div class="app-scroll" id="appScroll">
+      <header class="header">
+        <h1 class="title">Key Remapper</h1>
+        <p class="subtitle">Map Magic Remote shortcut keys to any installed app</p>
+      </header>
+
+      <div id="statusBanner" class="status-banner status-pending" role="status" aria-live="polite">
+        Checking Homebrew Channel…
+      </div>
+
+      <section class="panel" aria-labelledby="masterLabel">
+        <div class="panel-row master-row">
+          <div class="panel-text">
+            <h2 id="masterLabel">Enable Remapper</h2>
+            <p class="hint">When disabled, shortcut keys keep their original TV behavior.</p>
+          </div>
+          <label class="switch">
+            <input type="checkbox" id="enabledToggle" tabindex="0" />
+            <span class="switch-track" aria-hidden="true"></span>
+            <span class="switch-label" id="enabledLabel">Off</span>
+          </label>
+        </div>
+      </section>
+
+      <section class="panel panel-mappings" aria-labelledby="mappingsLabel">
+        <h2 id="mappingsLabel" class="section-title">Key Mappings</h2>
+        <div class="mappings" id="mappingsList">
+          <div class="mapping-row">
+            <label class="mapping-label" for="map-netflix">Netflix Key</label>
+            <select id="map-netflix" class="mapping-select" data-key="netflix" tabindex="0"></select>
+          </div>
+          <div class="mapping-row">
+            <label class="mapping-label" for="map-amazon">Prime Video Key</label>
+            <select id="map-amazon" class="mapping-select" data-key="amazon" tabindex="0"></select>
+          </div>
+          <div class="mapping-row">
+            <label class="mapping-label" for="map-disney">Disney+ Key</label>
+            <select id="map-disney" class="mapping-select" data-key="disney" tabindex="0"></select>
+          </div>
+          <div class="mapping-row">
+            <label class="mapping-label" for="map-rakuten">Rakuten TV Key</label>
+            <select id="map-rakuten" class="mapping-select" data-key="rakuten" tabindex="0"></select>
+          </div>
+          <div class="mapping-row">
+            <label class="mapping-label" for="map-lgchannels">LG Channels Key</label>
+            <select id="map-lgchannels" class="mapping-select" data-key="lgchannels" tabindex="0"></select>
+          </div>
+          <div class="mapping-row">
+            <label class="mapping-label" for="map-alexa">Alexa / Voice Key</label>
+            <select id="map-alexa" class="mapping-select" data-key="alexa" tabindex="0"></select>
+          </div>
+        </div>
+      </section>
+
+      <p id="message" class="message" role="status" aria-live="polite"></p>
+    </div>
+
+    <footer class="actions" id="actionsBar">
+      <div class="version" id="appVersion">v0.9.0</div>
+      <div class="actions-buttons">
+        <button type="button" id="btnReload" class="btn btn-secondary" tabindex="0">Reload Config</button>
+        <button type="button" id="btnSave" class="btn btn-primary" tabindex="0" disabled>Save &amp; Apply</button>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

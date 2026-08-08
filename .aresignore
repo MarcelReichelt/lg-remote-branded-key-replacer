@@ -1,0 +1,8 @@
+.cursor/
+.cursor/**
+.git/
+.git/**
+*.ipk
+deploy.sh
+README.md
+.aresignore

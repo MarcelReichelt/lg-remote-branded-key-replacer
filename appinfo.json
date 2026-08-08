@@ -1,0 +1,14 @@
+{
+  "id": "org.webosbrew.keyreplacer",
+  "title": "Key Remapper",
+  "main": "index.html",
+  "icon": "icon.png",
+  "largeIcon": "icon.png",
+  "type": "web",
+  "vendor": "webOS Homebrew",
+  "version": "0.9.0",
+  "resolution": "2560x1440",
+  "bgColor": "#12141a",
+  "iconColor": "#12141a",
+  "disableBackHistoryAPI": true
+}

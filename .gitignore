@@ -1,0 +1,30 @@
+# Dependencies / editor
+node_modules/
+.pnpm-store/
+.idea/
+.vscode/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# Cursor / local agent
+.cursor/
+
+# webOS packaging output
+dist/
+*.ipk
+
+# Local / temp
+*.log
+.tmp/
+tmp/
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# OS / misc
+*.bak
+*.orig
